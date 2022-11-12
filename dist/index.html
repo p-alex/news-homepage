@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+
+    <meta name="description" content="Frontend Mentor | News homepage" />
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+    <script src="./app.js" defer></script>
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav" data-side-nav="">
+        <img class="nav__logo" width="65" height="40" src="./images/logo.svg" alt="" />
+        <ul class="nav__links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">New</a>
+          </li>
+          <li>
+            <a href="#">Popular</a>
+          </li>
+          <li>
+            <a href="#">Trending</a>
+          </li>
+          <li>
+            <a href="#">Categories</a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="nav__hamburger"
+          aria-label="open side menu"
+          id="hamburger"
+        >
+          <img src="./images/icon-menu.svg" width="40" height="25" alt="" />
+        </button>
+
+        <aside class="sideMenu">
+          <div class="sideMenu__topFocusTrap" tabindex="0" />
+          <div class="sideMenu__backdrop"></div>
+          <div class="sideMenu__container">
+            <button class="sideMenu__close" aria-label="close side menu">
+              <img src="./images/icon-menu-close.svg" alt="" />
+            </button>
+            <ul class="sideMenu__links">
+              <li>
+                <a href="#" class="sideMenu__link">Home</a>
+              </li>
+              <li>
+                <a href="#" class="sideMenu__link">New</a>
+              </li>
+              <li>
+                <a href="#" class="sideMenu__link">Popular</a>
+              </li>
+              <li>
+                <a href="#" class="sideMenu__link">Trending</a>
+              </li>
+              <li>
+                <a href="#" class="sideMenu__link">Categories</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sideMenu__bottomFocusTrap" tabindex="0" />
+        </aside>
+      </nav>
+      <main class="main">
+        <section class="featured">
+          <header class="featured__banner">
+            <img src="./images/image-web-3-desktop.jpg" loading="eager" alt="" />
+          </header>
+          <div class="featured__body">
+            <h1 class="featured__title">The Bright Future of Web 3.0?</h1>
+            <div class="featured__content">
+              <p class="featured__text">
+                We dive into the next evolution of the web that claims to put the power of
+                the platforms back into the hands of the people. But is it really
+                fulfilling its promise?
+              </p>
+              <button class="primary-button">READ MORE</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="newArticles">
+          <h2 class="newArticles__heading">New</h2>
+          <div class="newArticles__container">
+            <article class="newArticle">
+              <a href="#">
+                <h3 class="newArticle__title">Hydrogen VS Electric Cars</h3>
+              </a>
+
+              <p class="newArticle__text">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </article>
+            <article class="newArticle">
+              <a href="#">
+                <h3 class="newArticle__title">The Downsides of AI Artistry</h3>
+              </a>
+
+              <p class="newArticle__text">
+                What are the possible adverse effects of on-demand AI image generation?
+              </p>
+            </article>
+            <article class="newArticle">
+              <a href="#"> <h3 class="newArticle__title">Is VC Funding Drying Up?</h3></a>
+
+              <p class="newArticle__text">
+                Is Private funding by VC firms is down 50% YOY. We take a look at what
+                that means.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="suggestions">
+          <article class="suggestion">
+            <img
+              class="suggestion__image"
+              width="110"
+              height="140"
+              src="./images/image-retro-pcs.jpg"
+              alt=""
+            />
+            <div class="suggestion__body">
+              <span class="suggestion__index">01</span>
+              <a href="#">
+                <h3 class="suggestion__title">Reviving Retro PCs</h3>
+              </a>
+              <p class="suggestion__description">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </article>
+          <article class="suggestion">
+            <img
+              class="suggestion__image"
+              width="110"
+              height="140"
+              src="./images/image-top-laptops.jpg"
+              alt=""
+            />
+            <div class="suggestion__body">
+              <span class="suggestion__index">02</span>
+              <a href="#">
+                <h3 class="suggestion__title">Top 10 Laptops of 2022</h3>
+              </a>
+              <p class="suggestion__description">
+                Our best picks for various needs and budgets
+              </p>
+            </div>
+          </article>
+          <article class="suggestion">
+            <img
+              class="suggestion__image"
+              width="110"
+              height="140"
+              src="./images/image-gaming-growth.jpg"
+              alt=""
+            />
+            <div class="suggestion__body">
+              <span class="suggestion__index">03</span>
+              <a href="#"><h3 class="suggestion__title">The Growth of Gaming</h3></a>
+
+              <p class="suggestion__description">
+                How the pandemic has sparked fresh opportunities
+              </p>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
