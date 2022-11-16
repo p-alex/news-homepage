@@ -50,7 +50,7 @@ a {
 }
 
 .nav__links a:hover {
-  color: hsl(5, 85%, 63%);
+  color: hsl(5 90% 48%);
 }
 
 .nav__hamburger {
@@ -113,7 +113,7 @@ a {
 
 .primary-button {
   padding: 15px 30px;
-  background-color: hsl(5, 85%, 63%);
+  background-color: hsl(5 90% 48%);
   color: white;
   font-weight: 700;
   letter-spacing: 3px;
@@ -188,7 +188,7 @@ a {
 .suggestion__index {
   font-size: 2rem;
   font-weight: 700;
-  color: hsl(233, 8%, 79%);
+  color: rgb(139 140 148);
 }
 
 .suggestion__body a {
@@ -196,7 +196,7 @@ a {
 }
 
 .suggestion__body a:hover .suggestion__title {
-  color: hsl(5, 85%, 63%);
+  color: hsl(5 90% 48%);
 }
 
 .suggestion__title {
@@ -217,7 +217,7 @@ a {
 }
 
 .footer a {
-  color: hsl(5, 85%, 63%);
+  color: hsl(5 90% 48%);
 }
 
 @media (max-width: 1140px) {
